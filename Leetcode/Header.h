@@ -7,14 +7,20 @@
 #include <string>       // std::string
 using namespace std;
 
-#define TEST3SUM 0
-#define TEST704	0
-#define TEST278	0
-#define TEST35	0
-#define TEST1477 1
+#define TEST3SUM	0
+#define TEST704		0
+#define TEST278		0
+#define TEST35		0
+#define TEST1477	0
+#define TEST547		0
+#define	TEST834		0
+#define TEST3		1
 
 vector<vector<int>> threeSum(vector<int>& nums);
 int search(vector<int>& nums, int target);//704
 int firstBadVersion(int n); //278
 int searchInsert(vector<int>& nums, int target);//35
 int minSumOfLengths(vector<int>& arr, int target);//1477
+int findCircleNum(vector<vector<int>>& isConnected); //547
+vector<int> sumOfDistancesInTree(int n, vector<vector<int>>& edges); //not solve yet
+int lengthOfLongestSubstring(string s);

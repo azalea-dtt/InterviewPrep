@@ -6,7 +6,7 @@
 #include "Header.h"
 int main()
 {
-//Test 3Sum
+    //Test 3Sum
 #if TEST3SUM
     std::vector<int> nums = { -1,0,1,2,-1,-4 };
     vector<vector<int>> vresult3 = threeSum(nums);
@@ -42,8 +42,27 @@ int main()
 
 #if TEST1477
 #endif
+#if TEST547
+    //vector<vector<int>> isConnected = { {1,1,0},{1,1,0},{0,0,1} };
+    vector<vector<int>> isConnected = { {1, 0, 0, 1}, {0, 1, 1, 0}, { 0, 1, 1, 1 }, { 1, 0, 1, 1 } };
+    int result = findCircleNum(isConnected);
+    cout << "result:" << result << endl;
+#endif
+#if TEST834
+    int n = 6; // 6 nodes
+    vector<vector<int>> edges = { {0,1} ,{0,2},{2,3},{2,4},{2,5} };
+    vector<int> ans = sumOfDistancesInTree(n, edges);
+    for (int i = 0; i < ans.size(); i++)
+        cout << ans[i] << " ";
+#endif
 
-
+#if TEST3
+    //string s = "tmmzuxt";
+    string s = "abcabcbb";
+       
+    int result = lengthOfLongestSubstring(s);
+    cout << "result:" << result << endl;
+#endif
 
 }
 
