@@ -65,5 +65,8 @@
     <ClCompile Include="1200_MinimumAbsoluteDifference.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="394_DecodeString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

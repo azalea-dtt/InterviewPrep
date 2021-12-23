@@ -23,7 +23,8 @@ using namespace std;
 #define TEST733		0
 #define TEST22		0
 #define TEST143		0
-#define TEST1200	1
+#define TEST1200	0
+#define TEST394		1
 
 vector<vector<int>> threeSum(vector<int>& nums);
 int search(vector<int>& nums, int target);//704
@@ -49,4 +50,8 @@ void reorderList(ListNode* head);
 #endif
 #if TEST1200
 vector<vector<int>> minimumAbsDifference(vector<int>& arr);
+#endif
+
+#if TEST394
+string decodeString(string s);
 #endif

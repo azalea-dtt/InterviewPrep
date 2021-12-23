@@ -113,7 +113,11 @@ int main()
         cout << endl;
     }
 #endif
-
+#if TEST394
+    string s = "2[abc]3[cd]ef";
+    string result = decodeString(s);
+    cout << result << endl;
+#endif
 
 
 

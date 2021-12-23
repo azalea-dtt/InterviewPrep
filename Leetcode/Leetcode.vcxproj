@@ -143,6 +143,7 @@
     <ClCompile Include="22_GenerateParenthesis.cpp" />
     <ClCompile Include="278_FirstBadVersion.cpp" />
     <ClCompile Include="35_SearchInsertPosition.cpp" />
+    <ClCompile Include="394_DecodeString.cpp" />
     <ClCompile Include="3sum.cpp" />
     <ClCompile Include="547_NumberOfProvinces.cpp" />
     <ClCompile Include="567_PermutationInString.cpp" />
