@@ -102,7 +102,7 @@ int main()
 #endif
 
 #if TEST1200
-    vector<int> nums{ 1,3,6,10,15 };
+    vector<int> nums{ 4,2,1,3 };
     vector<vector<int>> result = minimumAbsDifference(nums);
 
     for (int i = 0; i < result.size(); i++)
