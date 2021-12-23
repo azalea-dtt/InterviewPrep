@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include "Header.h"
+#include "ListNode.h"
 int main()
 {
     //Test 3Sum
@@ -63,6 +64,67 @@ int main()
     int result = lengthOfLongestSubstring(s);
     cout << "result:" << result << endl;
 #endif
+
+#if TEST567
+    //string s1 = "ab", s2 = "eidboaoo";
+    string s1 = "adc";
+    string s2 = "dcda";
+    bool result = checkInclusion(s1,s2);
+    cout << "result:" << result << endl;
+#endif
+
+#if TEST733
+#endif
+#if TEST22
+    int n = 3;
+    vector<string> result = generateParenthesis(n);
+
+    for (int i = 0; i < result.size(); i++)
+    {
+        cout << result[i] << endl;
+    }
+#endif
+#if TEST143
+    vector<int> nums{ 1, 2, 3 };
+    ListNode* node = BuildList(nums);
+
+    for (ListNode* temp = node; temp != nullptr; temp = temp->next)
+    {
+        cout << " " << temp->val;
+    }
+    cout << endl;
+    reorderList(node);
+    for (ListNode* temp = node; temp != nullptr; temp = temp->next)
+    {
+        cout << " " << temp->val;
+    }
+    cout << endl;
+#endif
+
+#if TEST1200
+    vector<int> nums{ 1,3,6,10,15 };
+    vector<vector<int>> result = minimumAbsDifference(nums);
+
+    for (int i = 0; i < result.size(); i++)
+    {
+        vector<int> temp = result[i];
+        for (int j = 0; j < temp.size(); j++)
+            cout << temp[j] << "  ";
+        cout << endl;
+    }
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

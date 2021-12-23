@@ -6,24 +6,24 @@ You must write an algorithm with O(log n) runtime complexity.
 #endif
 int SearchInsert(vector<int> & nums, int target, int begin, int end)
 {
-	if (end > (int)(nums.size() - 1))
-		return end;
-	if (begin < 0)
-		return 0;
-	if (begin > end)
-		return begin;
-	int mid = begin + (end - begin) / 2;
-	if (nums[mid] == target) return mid;
-	if (nums[mid] > target)
-		end = mid - 1;
-	else
-		begin = mid + 1;
-	return SearchInsert(nums, target, begin, end);
+    if (end > int(nums.size() - 1))
+        return end;
+    if (begin < 0)
+        return 0;
+    if (begin > end)
+        return begin;
+    int mid = begin + (end - begin) / 2;
+    if (nums[mid] == target) return mid;
+    if (nums[mid] > target)
+        end = mid - 1;
+    else
+        begin = mid + 1;
+    return SearchInsert(nums, target, begin, end);
 
 }
 int searchInsert(vector<int> & nums, int target)
 {
-	int begin = 0;
-	int end = nums.size() - 1;
-	return SearchInsert(nums, target, begin, end);
+    int begin = 0;
+    int end = nums.size() - 1;
+    return SearchInsert(nums, target, begin, end);
 }

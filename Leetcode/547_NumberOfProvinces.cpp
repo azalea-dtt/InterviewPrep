@@ -1,35 +1,39 @@
 #include "Header.h"
 #include <set>
-void dfs(vector<vector<int>> &isConnected, set<int>&visited, int startPoint)
+void dfs(vector<vector<int>>& isConnected, vector<bool>& isVisited, int i)
 {
-	if (visited.find(startPoint) != visited.end())
-	{
-		return; //this point was visited before
-	}
-	visited.insert(startPoint); //ok, this time we visit startPoint
-	//from startPoint, visit all the nodes which directly or indirectly connects to startPoint node
-	for (int i = 0; i < isConnected[startPoint].size(); i++)
-	{
-		if (isConnected[startPoint][i] == 1)
-		{
-			//startPoint and node i are connected --> visit node i
-			dfs(isConnected, visited, i); // this will visit indirect connected node
-			
-		}
-	}
-}
-int findCircleNum(vector<vector<int>>& isConnected)
-{
-	set<int> visited; //idx of the visited node
-	int count = 0;
-	for (int i = 0; i < isConnected.size(); i++)
-	{
-		if (visited.find(i) == visited.end()) // this point was not visited before
-		{
-			dfs(isConnected, visited, i);
-			count++;
-		}
+    if ((i < 0) || (i >= isConnected.size()) || (isVisited[i] == true)) return;
 
-	}
-	return count;
+    isVisited[i] = true;
+    for (int j = 0; j < isConnected[i].size(); j++)
+        if ((isConnected[i][j] == 1) && (isVisited[j] == false) && (i != j))
+            // if i connects to this neighbor and this neighbor is not visied
+            dfs(isConnected, isVisited, j);
+
+
+    return;
+
+
+
+}
+
+
+
+int findCircleNum(vector<vector<int>>& isConnected) {
+    int numOfCities = 0;
+    int i, j;
+    if (isConnected.size() == 0) return 0;
+    vector<bool> isVisited(isConnected[0].size(), false);
+
+    for (i = 0; i < isConnected.size(); i++)
+    {
+        if (isVisited[i] == false)
+        {
+
+            dfs(isConnected, isVisited, i);//if node is not visited, visit the node and its neightbor
+            numOfCities++;
+        }
+
+    }
+    return numOfCities;
 }
