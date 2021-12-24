@@ -26,7 +26,10 @@ using namespace std;
 #define TEST1200	0
 #define TEST394		0 
 //394: not finish
-#define TEST130	    1
+#define TEST130	    0
+#define TEST797	    0
+#define TEST78		1
+#define TEST90		0
 
 vector<vector<int>> threeSum(vector<int>& nums);
 int search(vector<int>& nums, int target);//704
@@ -60,4 +63,7 @@ string decodeString(string s);
 
 #if TEST130
 void solve(vector<vector<char>>& board);
+#endif
+#if TEST797
+vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph);
 #endif
