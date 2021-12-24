@@ -144,8 +144,26 @@ int main()
     }
 
 #endif
-
-
+#if TEST78
+    vector<int> nums{ 1, 2, 3 };
+    vector < vector<int>> result = subsets(nums);
+    for (int i = 0; i < result.size(); i++) {
+        for (int j = 0; j < result[i].size(); j++) {
+            cout << result[i][j] << " ";
+        }
+        cout << endl;
+    }
+#endif
+#if TEST90
+    vector<int> nums{ 1, 2, 2 };
+    vector < vector<int>> result = subsetsWithDup(nums);
+    for (int i = 0; i < result.size(); i++) {
+        for (int j = 0; j < result[i].size(); j++) {
+            cout << result[i][j] << " ";
+        }
+        cout << endl;
+    }
+#endif
 
 
 
