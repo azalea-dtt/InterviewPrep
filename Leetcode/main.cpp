@@ -119,7 +119,19 @@ int main()
     cout << result << endl;
 #endif
 
+#if TEST130
+    vector<vector<char>> board = { {'X', 'X', 'X', 'X'},{'X', 'O', 'O', 'X'},{'X', 'X', 'O', 'X'},{'X', 'O', 'X', 'X'} };
+    solve(board);
 
+    for (int i = 0; i < board.size(); i++) {
+
+        for (int j = 0; j < board[0].size(); j++)
+            cout << board[i][j] << " ";
+        cout << endl;
+    }
+
+
+#endif
 
 
 

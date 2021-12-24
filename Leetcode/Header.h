@@ -24,7 +24,9 @@ using namespace std;
 #define TEST22		0
 #define TEST143		0
 #define TEST1200	0
-#define TEST394		1
+#define TEST394		0 
+//394: not finish
+#define TEST130	    1
 
 vector<vector<int>> threeSum(vector<int>& nums);
 int search(vector<int>& nums, int target);//704
@@ -54,4 +56,8 @@ vector<vector<int>> minimumAbsDifference(vector<int>& arr);
 
 #if TEST394
 string decodeString(string s);
+#endif
+
+#if TEST130
+void solve(vector<vector<char>>& board);
 #endif
