@@ -28,8 +28,9 @@ using namespace std;
 //394: not finish
 #define TEST130	    0
 #define TEST797	    0
-#define TEST78		1
+#define TEST78		0
 #define TEST90		0
+#define TEST47		1
 
 vector<vector<int>> threeSum(vector<int>& nums);
 int search(vector<int>& nums, int target);//704
@@ -66,4 +67,7 @@ void solve(vector<vector<char>>& board);
 #endif
 #if TEST797
 vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph);
+#endif
+#if TEST47
+vector<vector<int>> permuteUnique(vector<int>& nums);
 #endif
