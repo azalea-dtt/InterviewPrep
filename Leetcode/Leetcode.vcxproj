@@ -137,15 +137,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1200_MinimumAbsoluteDifference.cpp" />
+    <ClCompile Include="143_ReorderList.cpp" />
     <ClCompile Include="1477_minSumOfLength.cpp" />
+    <ClCompile Include="22_GenerateParenthesis.cpp" />
     <ClCompile Include="278_FirstBadVersion.cpp" />
     <ClCompile Include="35_SearchInsertPosition.cpp" />
+    <ClCompile Include="394_DecodeString.cpp" />
     <ClCompile Include="3sum.cpp" />
+    <ClCompile Include="547_NumberOfProvinces.cpp" />
+    <ClCompile Include="567_PermutationInString.cpp" />
     <ClCompile Include="704_BinarySearch.cpp" />
+    <ClCompile Include="834_SumOfDistancesInTree.cpp" />
+    <ClCompile Include="ListNode.cpp" />
+    <ClCompile Include="LongestsubString.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
+    <ClInclude Include="ListNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
