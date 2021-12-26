@@ -30,7 +30,9 @@ using namespace std;
 #define TEST797	    0
 #define TEST78		0
 #define TEST90		0
-#define TEST47		1
+#define TEST47		0
+#define TEST79		0
+#define TEST17		1
 
 vector<vector<int>> threeSum(vector<int>& nums);
 int search(vector<int>& nums, int target);//704
@@ -70,4 +72,10 @@ vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph);
 #endif
 #if TEST47
 vector<vector<int>> permuteUnique(vector<int>& nums);
+#endif
+#if TEST79
+bool exist(vector<vector<char>>& board, string word);
+#endif
+#if TEST17
+vector<string> letterCombinations(string digits);
 #endif

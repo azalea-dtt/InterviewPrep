@@ -142,7 +142,32 @@ int main()
         }
         cout << endl;
     }
+#endif
 
+#if TEST47
+    vector<int> nums{ 4,2,1,3 };
+    vector < vector<int>> result = permuteUnique(nums);
+    for (int i = 0; i < result.size(); i++) {
+        for (int j = 0; j < result[i].size(); j++) {
+            cout << result[i][j] << " ";
+        }
+        cout << endl;
+    }
+#endif
+#if TEST79
+    vector<vector<char>> board = { {'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'} };
+    string word = "ABCB";
+    bool result = exist(board, word);
+    if (result)
+        cout << "result: found:" << result << endl;
+    else cout << "not found" << endl;
+#endif
+#if TEST17
+    string digits = "23";
+    vector<string> result = letterCombinations(digits);
+    for (int i = 0; i < result.size(); i++)
+        cout << result[i] << " ";
+    cout << endl;
 #endif
 
 

@@ -2,7 +2,7 @@
 #include <set>
 #include <string>
 #include <algorithm>
-#ifdef TEST22
+#if 0
 void findParenthesis(set<string>& result, int num, int n);
 vector<string> generateParenthesis(int n)
 {
@@ -83,5 +83,42 @@ void findParenthesis(set<string>& result, int num, int n)
 
 	}
 
+}
+#endif
+#if TEST22
+//1. Add open parenthesis if nOpen < n
+//2. Add close parenthesis if nClose < nOpen
+//3. Finish if nOpen = nClose = n
+void setParenthesis(int n, string& pStr, vector<string>& result, int nOpen, int nClose)
+{
+	//backtrack skill
+	//base case 3
+	if (pStr.length() == n*2)
+	{
+		result.push_back(pStr);
+		//pStr.clear();
+		return;
+	}
+	//base case 1
+	if (nOpen < n)
+	{
+		pStr += '(';
+		setParenthesis(n, pStr, result, nOpen + 1, nClose);
+		pStr.pop_back();
+
+	}
+	if (nClose < nOpen)
+	{
+		pStr += ')';
+		setParenthesis(n, pStr, result, nOpen, nClose+1);
+		pStr.pop_back(); ;
+	}
+}
+
+vector<string> generateParenthesis(int n) {
+	vector<string> result;
+	string pStr;
+	setParenthesis(n, pStr, result, 0, 0);
+	return result;
 }
 #endif
