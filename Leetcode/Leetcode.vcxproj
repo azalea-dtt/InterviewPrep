@@ -138,17 +138,27 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="1200_MinimumAbsoluteDifference.cpp" />
+    <ClCompile Include="130_SurroundedRegions.cpp" />
     <ClCompile Include="143_ReorderList.cpp" />
     <ClCompile Include="1477_minSumOfLength.cpp" />
+    <ClCompile Include="213_HouseRobber.cpp" />
     <ClCompile Include="22_GenerateParenthesis.cpp" />
     <ClCompile Include="278_FirstBadVersion.cpp" />
     <ClCompile Include="35_SearchInsertPosition.cpp" />
     <ClCompile Include="394_DecodeString.cpp" />
     <ClCompile Include="3sum.cpp" />
+    <ClCompile Include="47_Permutation2.cpp" />
     <ClCompile Include="547_NumberOfProvinces.cpp" />
+    <ClCompile Include="55_CanJump.cpp" />
     <ClCompile Include="567_PermutationInString.cpp" />
     <ClCompile Include="704_BinarySearch.cpp" />
+    <ClCompile Include="77_LetterCombination.cpp" />
+    <ClCompile Include="78_subsets.cpp" />
+    <ClCompile Include="797_AllPathSourceTarget.cpp" />
+    <ClCompile Include="79_WordSearch.cpp" />
     <ClCompile Include="834_SumOfDistancesInTree.cpp" />
+    <ClCompile Include="90_SubSet2.cpp" />
+    <ClCompile Include="FirstDuplicate.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="LongestsubString.cpp" />
     <ClCompile Include="main.cpp" />

@@ -169,10 +169,28 @@ int main()
         cout << result[i] << " ";
     cout << endl;
 #endif
+#if TEST213
+    vector<int> nums{ 0 };
+    int result = rob(nums);
+    cout << "result:" << result << endl;
+#endif
 
-
-
-
+#if TEST55
+    vector<int> nums{ 2,3,1,1,4 };
+    bool result = canJump(nums);
+    cout << "result:" << result << endl;
+#endif
+#if TEST39
+    vector<int> nums{ 2,3,1,1,4 };
+    int target = 9;
+    vector<vector<int>> result = combinationSum(nums, target);
+    for (int i = 0; i < result.size(); i++) {
+        for (int j = 0; j < result[i].size(); j++) {
+            cout << result[i][j] << " ";
+        }
+        cout << endl;
+    }
+#endif
 
 
 

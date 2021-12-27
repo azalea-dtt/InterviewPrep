@@ -32,7 +32,10 @@ using namespace std;
 #define TEST90		0
 #define TEST47		0
 #define TEST79		0
-#define TEST17		1
+#define TEST17		0
+#define TEST213		0
+#define TEST55		0
+#define TEST39		1
 
 vector<vector<int>> threeSum(vector<int>& nums);
 int search(vector<int>& nums, int target);//704
@@ -78,4 +81,13 @@ bool exist(vector<vector<char>>& board, string word);
 #endif
 #if TEST17
 vector<string> letterCombinations(string digits);
+#endif
+#if TEST213
+int rob(vector<int>& nums);
+#endif
+#if TEST55
+bool canJump(vector<int>& nums);
+#endif
+#if TEST39
+vector<vector<int>> combinationSum(vector<int>& candidates, int target);
 #endif
