@@ -24,7 +24,7 @@ using namespace std;
 #define TEST22		0
 #define TEST143		0
 #define TEST1200	0
-#define TEST394		0 
+#define TEST394		1
 //394: not finish
 #define TEST130	    0
 #define TEST797	    0
@@ -35,7 +35,7 @@ using namespace std;
 #define TEST17		0
 #define TEST213		0
 #define TEST55		0
-#define TEST39		1
+#define TEST39		0
 #define TEST40		0
 
 vector<vector<int>> threeSum(vector<int>& nums);
