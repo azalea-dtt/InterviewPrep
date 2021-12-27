@@ -36,6 +36,7 @@ using namespace std;
 #define TEST213		0
 #define TEST55		0
 #define TEST39		1
+#define TEST40		0
 
 vector<vector<int>> threeSum(vector<int>& nums);
 int search(vector<int>& nums, int target);//704
@@ -90,4 +91,7 @@ bool canJump(vector<int>& nums);
 #endif
 #if TEST39
 vector<vector<int>> combinationSum(vector<int>& candidates, int target);
+#endif
+#if TEST40
+vector<vector<int>> combinationSum2(vector<int>& candidates, int target);
 #endif
