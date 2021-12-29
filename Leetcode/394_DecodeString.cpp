@@ -4,49 +4,40 @@
 string decodeString(string s)
 {
 	string result;
-	
-
-	string subString;
-	string temp;
-	int brk = 0;
-	int loop = 0;
-	int len = s.length();
-
-	for (int i = len - 1; i > 0; i--)
+	stack<string> st;
+	for (int i = 0; i < s.length(); i++)
 	{
-		if (isalpha(s[i]))
+		if (s[i] != ']')
 		{
-			if (brk == 0)
-				result.insert(result.begin(), s[i]);
-			else {
-				
-			}
+			string si{s[i]};
+			st.push(si);
 		}
-		else if (s[i] == '[')
-		{
+		else {
+			string subStr = "";
+			while (st.top() != "[")
+			{
+				subStr.insert(0, st.top().c_str());
+				st.pop();
+			}
+			st.pop(); // remove '[';
+			string numStr = "";
 			
-			brk++;
-		}
-		else if (isdigit(s[i]))
-		{
-			loop = s[i] - '0';
-			for (int i = 0; i < loop; i++)
-			{
-				subString += temp;
+			while ( !(st.empty())&& (isdigit(st.top()[0]))) {
+				//numStr = st.top() + numStr;
+				numStr.insert(0, st.top().c_str());
+				st.pop();
 			}
-			if (brk == 0)
-			{
-				result.insert(result.begin(), subString.begin(), subString.end());
-			}
-
+			int num = stoi(numStr);
+			for (int i = 0; i < num; i++)
+				st.push(subStr);
 		}
-		else if (s[i] == ']')
-		{
-			brk++;
-		}
-
 	}
 
+	while (st.empty() == false)
+	{
+		result.insert(0, st.top().c_str());
+		st.pop();
+	}
 
 
 	return result;
