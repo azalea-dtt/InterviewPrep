@@ -6,7 +6,7 @@
 #include <utility>      // std::pair, std::make_pair
 #include <string>       // std::string
 
-
+#include "TreeNode.h"
 #include "ListNode.h"
 using namespace std;
 
@@ -41,7 +41,8 @@ using namespace std;
 #define TEST62		0
 #define TEST413		0
 #define TEST476		0
-#define TEST973		1
+#define TEST973		0
+#define TEST337		1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -114,5 +115,9 @@ int numberOfArithmeticSlices(vector<int>& nums);
 int findComplement(int num);
 #endif
 #if TEST973
+//find better solution??
 vector<vector<int>> kClosest(vector<vector<int>>& points, int k);
+#endif
+#if TEST337
+int rob(TreeNode* root);
 #endif

@@ -234,6 +234,13 @@ int main()
         cout << endl;
     }
 #endif
+#if TEST337
+#define null -1
+    vector<int> nums {3, 2, 3, null, 3, null, 1};
+    TreeNode* root = BuildTree(nums, 0);
+    int result = rob(root);
+    cout << "result:" << result << endl;
+#endif
 
 
 }
