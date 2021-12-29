@@ -218,7 +218,11 @@ int main()
     int result = numberOfArithmeticSlices(nums);
     cout << "result:" << result << endl;
 #endif
-
+#if TEST5
+    string s = "aacabdkacaa";
+    string result = longestPalindrome(s);
+    cout << "result:" << result << endl;
+#endif
 
 
 }
