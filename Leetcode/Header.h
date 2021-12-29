@@ -39,7 +39,8 @@ using namespace std;
 #define TEST40		0
 #define TEST45		0
 #define TEST62		0
-#define TEST413		1
+#define TEST413		0
+#define TEST476		1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -107,4 +108,7 @@ int uniquePaths(int m, int n);
 #endif
 #if TEST413
 int numberOfArithmeticSlices(vector<int>& nums);
+#endif
+#if TEST476
+int findComplement(int num);
 #endif

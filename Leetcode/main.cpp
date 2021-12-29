@@ -218,7 +218,11 @@ int main()
     int result = numberOfArithmeticSlices(nums);
     cout << "result:" << result << endl;
 #endif
-
+#if TEST476
+    int num = 7;
+    int result = findComplement(num);
+    cout << "result:" << result << endl;
+#endif
 
 
 }
