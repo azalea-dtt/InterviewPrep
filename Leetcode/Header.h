@@ -37,7 +37,9 @@ using namespace std;
 #define TEST55		0
 #define TEST39		0
 #define TEST40		0
-#define TEST45		1
+#define TEST45		0
+#define TEST62		0
+#define TEST413		1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -99,4 +101,10 @@ vector<vector<int>> combinationSum2(vector<int>& candidates, int target);
 #endif
 #if TEST45
 int jump(vector<int>& nums);
+#endif
+#if TEST62
+int uniquePaths(int m, int n);
+#endif
+#if TEST413
+int numberOfArithmeticSlices(vector<int>& nums);
 #endif

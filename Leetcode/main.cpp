@@ -207,6 +207,18 @@ int main()
     int result = jump(nums);
     cout << "result:" << result << endl;
 #endif
+#if TEST62
+    int m = 3;
+    int n = 7;
+    int result = uniquePaths(m, n);
+    cout << "result:" << result << endl;
+#endif
+#if TEST413
+    vector<int> nums{ 1,2,3,4 };
+    int result = numberOfArithmeticSlices(nums);
+    cout << "result:" << result << endl;
+#endif
+
 
 
 }
