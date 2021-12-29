@@ -223,6 +223,17 @@ int main()
     int result = findComplement(num);
     cout << "result:" << result << endl;
 #endif
+#if TEST973
+    vector<vector<int>> points  { {3,3},{5,-1},{-2,4} };
+    int k = 2;
+    vector<vector<int>> result = kClosest(points, k);
+    for (int i = 0; i < result.size(); i++) {
+        for (int j = 0; j < result[i].size(); j++) {
+            cout << result[i][j] << " ";
+        }
+        cout << endl;
+    }
+#endif
 
 
 }

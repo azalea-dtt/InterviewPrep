@@ -40,7 +40,8 @@ using namespace std;
 #define TEST45		0
 #define TEST62		0
 #define TEST413		0
-#define TEST476		1
+#define TEST476		0
+#define TEST973		1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -111,4 +112,7 @@ int numberOfArithmeticSlices(vector<int>& nums);
 #endif
 #if TEST476
 int findComplement(int num);
+#endif
+#if TEST973
+vector<vector<int>> kClosest(vector<vector<int>>& points, int k);
 #endif
