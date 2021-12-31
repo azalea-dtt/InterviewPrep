@@ -42,7 +42,11 @@ using namespace std;
 #define TEST413		0
 #define TEST476		0
 #define TEST973		0
-#define TEST337		1
+#define TEST337		0
+#define TEST91		0
+#define TEST139		0
+#define TEST300		0
+#define TEST673		1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -120,4 +124,16 @@ vector<vector<int>> kClosest(vector<vector<int>>& points, int k);
 #endif
 #if TEST337
 int rob(TreeNode* root);
+#endif
+#if TEST91
+int numDecodings(string s);
+#endif
+#if TEST139
+bool wordBreak(string s, vector<string>& wordDict);
+#endif
+#if TEST300
+int lengthOfLIS(vector<int>& nums);
+#endif
+#if TEST673
+int findNumberOfLIS(vector<int>& nums);
 #endif

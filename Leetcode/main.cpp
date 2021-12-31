@@ -241,6 +241,27 @@ int main()
     int result = rob(root);
     cout << "result:" << result << endl;
 #endif
+#if TEST91
+    string s = "226";
+    int result = numDecodings(s);
+    cout << "result:" << result << endl;
+
+#endif
+#if TEST139
+    string s = "leetcode";
+    vector<string> wordDict{ "leet","code" };
+    bool result = wordBreak(s, wordDict);
+    cout << "result:" << result << endl;
+#endif
+#if TEST673
+    //vector<int> nums { 1,1,1,2,2,2,3,3,3 };
+    vector<int> nums{ 2,2,2,2,2 };
+    int result = findNumberOfLIS(nums);
+    cout << "result:" << result << endl;
+#endif
+
+
+
 
 
 }
