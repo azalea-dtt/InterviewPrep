@@ -46,7 +46,10 @@ using namespace std;
 #define TEST91		0
 #define TEST139		0
 #define TEST300		0
-#define TEST673		1
+#define TEST673		0
+#define TEST1143	0
+#define TEST583		0
+#define TEST312		1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -136,4 +139,16 @@ int lengthOfLIS(vector<int>& nums);
 #endif
 #if TEST673
 int findNumberOfLIS(vector<int>& nums);
+#endif
+
+#if TEST1143
+int longestCommonSubsequence(string text1, string text2);
+#endif
+
+#if TEST583
+int minDistance(string word1, string word2);
+#endif
+
+#if TEST312
+int maxCoins(vector<int>& nums);
 #endif

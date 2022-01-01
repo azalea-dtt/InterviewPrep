@@ -259,8 +259,25 @@ int main()
     int result = findNumberOfLIS(nums);
     cout << "result:" << result << endl;
 #endif
+#if TEST1143
+    string text1 = "abdcde";
+    string text2 = "ace";
+    int  result = longestCommonSubsequence(text1, text2);
+    cout << "result:" << result << endl;
+#endif
 
+#if TEST583
+    string word1 = "sea";
+    string word2 = "eat";
+    int result = minDistance(word1, word2);
+    cout << "result:" << result << endl;
+#endif
 
+#if TEST312
+    vector<int> nums{ 3,1,5,8 };
+    int result = maxCoins(nums);
+    cout << "result:" << result << endl;
+#endif
 
 
 
