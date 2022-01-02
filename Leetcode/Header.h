@@ -49,7 +49,12 @@ using namespace std;
 #define TEST673		0
 #define TEST1143	0
 #define TEST583		0
-#define TEST312		1
+#define TEST312		0
+#define TEST1010	0
+#define TEST322		0
+#define TEST343		0
+
+#define TEST72		1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -151,4 +156,17 @@ int minDistance(string word1, string word2);
 
 #if TEST312
 int maxCoins(vector<int>& nums);
+#endif
+#if TEST1010
+int numPairsDivisibleBy60(vector<int>& time);
+#endif
+
+#if TEST322
+int coinChange( vector<int>& coins, int amount);
+#endif
+#if TEST343
+int integerBreak(int n);
+#endif
+#if TEST72
+int minDistance(string word1, string word2);
 #endif

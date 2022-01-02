@@ -278,7 +278,30 @@ int main()
     int result = maxCoins(nums);
     cout << "result:" << result << endl;
 #endif
+#if TEST1010
+    vector<int> nums{ 30,20,150,100,40 };
+    int result = numPairsDivisibleBy60(nums);
+    cout << "result:" << result << endl;
+#endif
 
+#if TEST322
+    vector<int> coins{ 1,2,5 };
+    int amount = 11;
+    int result = coinChange(coins, amount);
+    cout << "result:" << result << endl;
+#endif
+#if TEST343
+    int n = 10;
+    int result = integerBreak(10);
+    cout << "result:" << result << endl;
+#endif
+#if TEST72
+    string word1 = "intention";
+    string word2 = "execution";
+    
+    int result = minDistance(word1, word2);
+    cout << "result:" << result << endl;
+#endif
 
 
 }
