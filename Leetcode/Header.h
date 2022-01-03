@@ -6,7 +6,7 @@
 #include <utility>      // std::pair, std::make_pair
 #include <string>       // std::string
 
-
+#include "TreeNode.h"
 #include "ListNode.h"
 using namespace std;
 
@@ -41,6 +41,21 @@ using namespace std;
 #define TEST62		0
 #define TEST413		0
 #define TEST5		1
+#define TEST476		0
+#define TEST973		0
+#define TEST337		0
+#define TEST91		0
+#define TEST139		0
+#define TEST300		0
+#define TEST673		0
+#define TEST1143	0
+#define TEST583		0
+#define TEST312		0
+#define TEST1010	0
+#define TEST322		0
+#define TEST343		0
+
+#define TEST72		1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -111,4 +126,50 @@ int numberOfArithmeticSlices(vector<int>& nums);
 #endif
 #if TEST5
 string longestPalindrome(string s);
+#if TEST476
+int findComplement(int num);
+#endif
+#if TEST973
+//find better solution??
+vector<vector<int>> kClosest(vector<vector<int>>& points, int k);
+#endif
+#if TEST337
+int rob(TreeNode* root);
+#endif
+#if TEST91
+int numDecodings(string s);
+#endif
+#if TEST139
+bool wordBreak(string s, vector<string>& wordDict);
+#endif
+#if TEST300
+int lengthOfLIS(vector<int>& nums);
+#endif
+#if TEST673
+int findNumberOfLIS(vector<int>& nums);
+#endif
+
+#if TEST1143
+int longestCommonSubsequence(string text1, string text2);
+#endif
+
+#if TEST583
+int minDistance(string word1, string word2);
+#endif
+
+#if TEST312
+int maxCoins(vector<int>& nums);
+#endif
+#if TEST1010
+int numPairsDivisibleBy60(vector<int>& time);
+#endif
+
+#if TEST322
+int coinChange( vector<int>& coins, int amount);
+#endif
+#if TEST343
+int integerBreak(int n);
+#endif
+#if TEST72
+int minDistance(string word1, string word2);
 #endif

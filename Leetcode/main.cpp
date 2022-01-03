@@ -221,6 +221,88 @@ int main()
 #if TEST5
     string s = "aacabdkacaa";
     string result = longestPalindrome(s);
+#if TEST476
+    int num = 7;
+    int result = findComplement(num);
+    cout << "result:" << result << endl;
+#endif
+#if TEST973
+    vector<vector<int>> points  { {3,3},{5,-1},{-2,4} };
+    int k = 2;
+    vector<vector<int>> result = kClosest(points, k);
+    for (int i = 0; i < result.size(); i++) {
+        for (int j = 0; j < result[i].size(); j++) {
+            cout << result[i][j] << " ";
+        }
+        cout << endl;
+    }
+#endif
+#if TEST337
+#define null -1
+    vector<int> nums {3, 2, 3, null, 3, null, 1};
+    TreeNode* root = BuildTree(nums, 0);
+    int result = rob(root);
+    cout << "result:" << result << endl;
+#endif
+#if TEST91
+    string s = "226";
+    int result = numDecodings(s);
+    cout << "result:" << result << endl;
+
+#endif
+#if TEST139
+    string s = "leetcode";
+    vector<string> wordDict{ "leet","code" };
+    bool result = wordBreak(s, wordDict);
+    cout << "result:" << result << endl;
+#endif
+#if TEST673
+    //vector<int> nums { 1,1,1,2,2,2,3,3,3 };
+    vector<int> nums{ 2,2,2,2,2 };
+    int result = findNumberOfLIS(nums);
+    cout << "result:" << result << endl;
+#endif
+#if TEST1143
+    string text1 = "abdcde";
+    string text2 = "ace";
+    int  result = longestCommonSubsequence(text1, text2);
+    cout << "result:" << result << endl;
+#endif
+
+#if TEST583
+    string word1 = "sea";
+    string word2 = "eat";
+    int result = minDistance(word1, word2);
+    cout << "result:" << result << endl;
+#endif
+
+#if TEST312
+    vector<int> nums{ 3,1,5,8 };
+    int result = maxCoins(nums);
+    cout << "result:" << result << endl;
+#endif
+#if TEST1010
+    vector<int> nums{ 30,20,150,100,40 };
+    int result = numPairsDivisibleBy60(nums);
+    cout << "result:" << result << endl;
+#endif
+
+#if TEST322
+    vector<int> coins{ 1,2,5 };
+    int amount = 11;
+    int result = coinChange(coins, amount);
+    cout << "result:" << result << endl;
+#endif
+#if TEST343
+    int n = 10;
+    int result = integerBreak(10);
+    cout << "result:" << result << endl;
+#endif
+#if TEST72
+    string word1 = "intention";
+    string word2 = "execution";
+    
+    int result = minDistance(word1, word2);
     cout << "result:" << result << endl;
 #endif
 
