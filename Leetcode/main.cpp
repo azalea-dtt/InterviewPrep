@@ -221,6 +221,8 @@ int main()
 #if TEST5
     string s = "aacabdkacaa";
     string result = longestPalindrome(s);
+#endif
+
 #if TEST476
     int num = 7;
     int result = findComplement(num);
@@ -305,7 +307,12 @@ int main()
     int result = minDistance(word1, word2);
     cout << "result:" << result << endl;
 #endif
-
+#if TEST997
+    int n = 3;
+    vector<vector<int>> trust { {1,3},{2,3},{3,1} };
+    int result = findJudge(n, trust);
+    cout << "result:" << result << endl;
+#endif
 
 }
 

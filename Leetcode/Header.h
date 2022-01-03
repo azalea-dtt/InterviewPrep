@@ -40,7 +40,7 @@ using namespace std;
 #define TEST45		0
 #define TEST62		0
 #define TEST413		0
-#define TEST5		1
+#define TEST5		0
 #define TEST476		0
 #define TEST973		0
 #define TEST337		0
@@ -55,7 +55,8 @@ using namespace std;
 #define TEST322		0
 #define TEST343		0
 
-#define TEST72		1
+#define TEST72		0
+#define TEST997		1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -126,6 +127,7 @@ int numberOfArithmeticSlices(vector<int>& nums);
 #endif
 #if TEST5
 string longestPalindrome(string s);
+#endif
 #if TEST476
 int findComplement(int num);
 #endif
@@ -172,4 +174,7 @@ int integerBreak(int n);
 #endif
 #if TEST72
 int minDistance(string word1, string word2);
+#endif
+#if TEST997
+int findJudge(int n, vector<vector<int>>& trust);
 #endif
