@@ -314,6 +314,15 @@ int main()
     cout << "result:" << result << endl;
 #endif
 
+#if TEST1009
+    int n = 5;
+    int result = bitwiseComplement(n);
+    cout << "result:" << result << endl;
+#endif
+
+
+
+
 }
 
 

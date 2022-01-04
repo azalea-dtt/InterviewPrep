@@ -56,7 +56,9 @@ using namespace std;
 #define TEST343		0
 
 #define TEST72		0
-#define TEST997		1
+#define TEST997		0
+#define TEST1009	0
+#define TEST384		1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -177,4 +179,9 @@ int minDistance(string word1, string word2);
 #endif
 #if TEST997
 int findJudge(int n, vector<vector<int>>& trust);
+#endif
+#if TEST1009
+int bitwiseComplement(int n);
+#endif
+#if TEST384
 #endif
