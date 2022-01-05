@@ -325,7 +325,7 @@ int main()
     vector<vector<string>> result = partition(s);
     for (int i = 0; i < result.size(); i++) {
         for (int j = 0; j < result[i].size(); j++)
-            cout << result[i][j];
+            cout << result[i][j] << "   ";
         cout << endl;
     }
 #endif
@@ -340,6 +340,25 @@ int main()
     int result = maxPoints(points);
     cout << "result__:" << result << endl;
 #endif
+
+#if TEST132
+    string s = "abababa";
+    int result = minCut(s);
+    cout << "result:" << result << endl;
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

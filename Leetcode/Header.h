@@ -61,7 +61,8 @@ using namespace std;
 #define TEST384		0
 #define TEST131		0
 #define TEST202		0
-#define TEST149		1
+#define TEST149		0
+#define TEST132		1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -196,4 +197,7 @@ bool isHappy(int n);
 #endif
 #if TEST149
 int maxPoints(vector<vector<int>>& points);
+#endif
+#if TEST132
+int minCut(string s);
 #endif
