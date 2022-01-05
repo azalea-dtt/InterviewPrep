@@ -62,7 +62,8 @@ using namespace std;
 #define TEST131		0
 #define TEST202		0
 #define TEST149		0
-#define TEST132		1
+#define TEST132		0
+#define TEST217		1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -200,4 +201,7 @@ int maxPoints(vector<vector<int>>& points);
 #endif
 #if TEST132
 int minCut(string s);
+#endif
+#if TEST217
+bool containsDuplicate(vector<int>& nums);
 #endif
