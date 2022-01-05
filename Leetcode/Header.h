@@ -58,7 +58,10 @@ using namespace std;
 #define TEST72		0
 #define TEST997		0
 #define TEST1009	0
-#define TEST384		1
+#define TEST384		0
+#define TEST131		0
+#define TEST202		0
+#define TEST149		1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -184,4 +187,13 @@ int findJudge(int n, vector<vector<int>>& trust);
 int bitwiseComplement(int n);
 #endif
 #if TEST384
+#endif
+#if TEST131
+vector<vector<string>> partition(string s);
+#endif
+#if TEST202
+bool isHappy(int n);
+#endif
+#if TEST149
+int maxPoints(vector<vector<int>>& points);
 #endif
