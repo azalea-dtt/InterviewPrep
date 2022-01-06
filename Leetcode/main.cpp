@@ -346,10 +346,19 @@ int main()
     int result = minCut(s);
     cout << "result:" << result << endl;
 #endif
+#if TEST217
+    vector<int> nums{ 3,1,5,1,8 };
+    bool result = containsDuplicate(nums);
+    cout << "result:" << result << endl;
+#endif
 
 
-
-
+#if TEST1094
+    int capacity = 4;
+    vector<vector<int>> trips{ {2,1,5},{3,3,7} };
+    bool result = carPooling(trips, capacity);
+    cout << "result:" << result << endl;
+#endif
 
 
 

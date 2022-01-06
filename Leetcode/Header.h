@@ -63,7 +63,8 @@ using namespace std;
 #define TEST202		0
 #define TEST149		0
 #define TEST132		0
-#define TEST217		1
+#define TEST217		0
+#define TEST1094	1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -204,4 +205,7 @@ int minCut(string s);
 #endif
 #if TEST217
 bool containsDuplicate(vector<int>& nums);
+#endif
+#if TEST1094
+bool carPooling(vector<vector<int>>& trips, int capacity);
 #endif
