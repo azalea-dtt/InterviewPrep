@@ -64,7 +64,8 @@ using namespace std;
 #define TEST149		0
 #define TEST132		0
 #define TEST217		0
-#define TEST1094	1
+#define TEST1094	0
+#define TEST_SINGLE_CYCLE	1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -208,4 +209,7 @@ bool containsDuplicate(vector<int>& nums);
 #endif
 #if TEST1094
 bool carPooling(vector<vector<int>>& trips, int capacity);
+#endif
+#if TEST_SINGLE_CYCLE
+bool hasSingleCycle(vector<int> array);
 #endif

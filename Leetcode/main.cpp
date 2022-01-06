@@ -359,7 +359,11 @@ int main()
     bool result = carPooling(trips, capacity);
     cout << "result:" << result << endl;
 #endif
-
+#if TEST_SINGLE_CYCLE
+    vector<int> array{ 1, 2, 3, 4, -2, 3, 7, 8, -26 };
+    bool result = hasSingleCycle(array);
+    cout << "result:" << result << endl;
+#endif
 
 
 
