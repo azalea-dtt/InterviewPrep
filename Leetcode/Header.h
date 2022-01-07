@@ -65,7 +65,11 @@ using namespace std;
 #define TEST132		0
 #define TEST217		0
 #define TEST1094	0
-#define TEST_SINGLE_CYCLE	1
+#define TEST_SINGLE_CYCLE	0
+#define TEST350		0
+#define TEST121		1
+
+#define TEST382		0
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -212,4 +216,12 @@ bool carPooling(vector<vector<int>>& trips, int capacity);
 #endif
 #if TEST_SINGLE_CYCLE
 bool hasSingleCycle(vector<int> array);
+#endif
+
+#if TEST350
+vector<int> intersect(vector<int>& nums1, vector<int>& nums2);
+#endif
+
+#if TEST121
+int maxProfit(vector<int>& prices);
 #endif

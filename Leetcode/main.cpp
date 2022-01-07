@@ -364,7 +364,22 @@ int main()
     bool result = hasSingleCycle(array);
     cout << "result:" << result << endl;
 #endif
+#if TEST121
+    vector<int> prices { 7,1,5,3,6,4 };
+    int result = maxProfit(prices);
+    cout << "result:" << result << endl;
+#endif
 
+#if TEST350
+    vector<int> nums1{ 1,2,2,1 };
+    vector <int> nums2{ 2,2 };
+    vector<int> result = intersect(nums1, nums2);
+
+    for (auto num : result)
+    {
+        cout << num << endl;
+    }
+#endif
 
 
 
