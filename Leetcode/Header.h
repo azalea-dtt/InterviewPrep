@@ -67,9 +67,12 @@ using namespace std;
 #define TEST1094	0
 #define TEST_SINGLE_CYCLE	0
 #define TEST350		0
-#define TEST121		1
+#define TEST121		0
 
 #define TEST382		0
+#define TEST566		0
+#define TEST118		0
+#define TEST1463	1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -224,4 +227,13 @@ vector<int> intersect(vector<int>& nums1, vector<int>& nums2);
 
 #if TEST121
 int maxProfit(vector<int>& prices);
+#endif
+#if TEST566
+vector<vector<int>> matrixReshape(vector<vector<int>>& mat, int r, int c);
+#endif
+#if TEST118
+vector<vector<int>> generate(int numRows);
+#endif
+#if TEST1463
+int cherryPickup(vector<vector<int>>& grid);
 #endif

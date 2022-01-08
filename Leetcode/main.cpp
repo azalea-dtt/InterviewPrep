@@ -381,9 +381,30 @@ int main()
     }
 #endif
 
-
-
-
+#if TEST566
+    vector<vector<int>> mat{ {1, 2},{3, 4} };
+    int r = 1, c = 4;
+    vector<vector<int>> result = matrixReshape(mat, r, c);
+    for (int i = 0; i < result.size(); i++) {
+        for (int j = 0; j < result[i].size(); j++)
+            cout << result[i][j] << "   ";
+        cout << endl;
+    }
+#endif
+#if TEST118
+    int num = 5;
+    vector<vector<int>> result = generate(num);
+    for (int i = 0; i < result.size(); i++) {
+        for (int j = 0; j < result[i].size(); j++)
+            cout << result[i][j] << "   ";
+        cout << endl;
+    }
+#endif
+#if TEST1463
+    vector<vector<int>> grid { {3,1,1},{2,5,1},{1,5,5},{2,1,1} };
+    int result = cherryPickup(grid);
+    cout << "result:" << result << endl;
+#endif
 
 
 
