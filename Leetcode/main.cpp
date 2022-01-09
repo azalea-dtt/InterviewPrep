@@ -405,9 +405,36 @@ int main()
     int result = cherryPickup(grid);
     cout << "result:" << result << endl;
 #endif
+#if TEST1041
+    string instructions = "GLGLGGLGL";
+    bool result = isRobotBounded(instructions);
+    cout << "result:" << result << endl;
+#endif
 
+#if TEST74
+    vector<vector<int>> matrix = { {1,3,5,7},{10,11,16,20},{23,30,34,60} }; 
+    int target = 3;
 
+    bool result = searchMatrix(matrix, target);
+    cout << "result:" << result << endl;
 
+#endif
+#if TEST36
+    vector<vector<char>> board =
+    { {'5','3','.','.','7','.','.','.','.'}
+    ,{'6','.','.','1','9','5','.','.','.'}
+    ,{'.','9','8','.','.','.','.','6','.'}
+    ,{'8','.','.','.','6','.','.','.','3'}
+    ,{'4','.','.','8','.','3','.','.','1'}
+    ,{'7','.','.','.','2','.','.','.','6'}
+    ,{'.','6','.','.','.','.','2','8','.'}
+    ,{'.','.','.','4','1','9','.','.','5'}
+    ,{'.','.','.','.','8','.','.','7','9'} };
+
+    bool result = isValidSudoku(board);
+    cout << "result:" << result << endl;
+
+#endif
 
 }
 

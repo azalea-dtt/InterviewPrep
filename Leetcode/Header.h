@@ -72,7 +72,11 @@ using namespace std;
 #define TEST382		0
 #define TEST566		0
 #define TEST118		0
-#define TEST1463	1
+#define TEST1463	0
+#define TEST1041	0
+#define TEST36		1
+
+#define TEST74		0
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -236,4 +240,15 @@ vector<vector<int>> generate(int numRows);
 #endif
 #if TEST1463
 int cherryPickup(vector<vector<int>>& grid);
+#endif
+#if TEST1041
+bool isRobotBounded(string instructions);
+#endif
+
+#if TEST36
+bool isValidSudoku(vector<vector<char>>& board);
+#endif
+
+#if TEST74
+bool searchMatrix(vector<vector<int>>& matrix, int target);
 #endif
