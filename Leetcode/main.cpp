@@ -456,7 +456,29 @@ int main()
     bool result = isAnagram(s, t);
     cout << "result:" << result << endl;
 #endif
-
+#if TEST141
+    vector<int> nums{ 3,2,0,-4 };
+    ListNode* node = BuildList(nums);
+    ListNode* cycle = BuildCycle(node, 1);
+    bool result = hasCycle(cycle);
+    cout << "result:" << result << endl;
+#endif
+#if TEST203
+    vector<int> nums{ 7,8,7,7 };
+    ListNode* node = BuildList(nums);
+    
+    for (ListNode* temp = node; temp != nullptr; temp = temp->next)
+    {
+        cout << " " << temp->val;
+    }
+    cout << endl;
+    ListNode* result = removeElements(node, 7);
+    for (ListNode* temp = result; temp != nullptr; temp = temp->next)
+    {
+        cout << " " << temp->val;
+    }
+    cout << endl;
+#endif
 }
 
 

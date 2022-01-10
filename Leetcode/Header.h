@@ -5,7 +5,7 @@
 
 #include <utility>      // std::pair, std::make_pair
 #include <string>       // std::string
-
+#include <algorithm>
 #include "TreeNode.h"
 #include "ListNode.h"
 using namespace std;
@@ -77,7 +77,13 @@ using namespace std;
 #define TEST36		0
 
 #define TEST74		0
-#define TEST67		1
+#define TEST67		0
+#define TEST387		0
+#define TEST383		0
+#define TEST242		0
+#define TEST141		0
+#define TEST21		0
+#define TEST203		1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -255,4 +261,22 @@ bool searchMatrix(vector<vector<int>>& matrix, int target);
 #endif
 #if TEST67
 string addBinary(string a, string b);
+#endif
+#if TEST387
+int firstUniqChar(string s);
+#endif
+#if TEST383
+bool canConstruct(string ransomNote, string magazine);
+#endif
+#if TEST242
+bool isAnagram(string s, string t);
+#endif
+#if TEST141
+bool hasCycle(ListNode* head);
+#endif
+#if TEST21
+ListNode* mergeTwoLists(ListNode* list1, ListNode* list2);
+#endif
+#if TEST203
+ListNode* removeElements(ListNode* head, int val);
 #endif
