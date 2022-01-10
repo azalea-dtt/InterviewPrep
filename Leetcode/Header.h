@@ -74,9 +74,10 @@ using namespace std;
 #define TEST118		0
 #define TEST1463	0
 #define TEST1041	0
-#define TEST36		1
+#define TEST36		0
 
 #define TEST74		0
+#define TEST67		1
 
 
 vector<vector<int>> threeSum(vector<int>& nums);
@@ -251,4 +252,7 @@ bool isValidSudoku(vector<vector<char>>& board);
 
 #if TEST74
 bool searchMatrix(vector<vector<int>>& matrix, int target);
+#endif
+#if TEST67
+string addBinary(string a, string b);
 #endif

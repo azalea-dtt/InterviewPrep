@@ -436,6 +436,12 @@ int main()
 
 #endif
 
+#if TEST67
+    string a = "1010", b = "1011";
+    string result = addBinary(a, b);
+    cout << "result:" << result << endl;
+#endif
+
 }
 
 
