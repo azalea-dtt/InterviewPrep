@@ -441,6 +441,21 @@ int main()
     string result = addBinary(a, b);
     cout << "result:" << result << endl;
 #endif
+#if TEST387
+    string s = "eetcode";
+    int result = firstUniqChar(s);
+    cout << "result:" << result << endl;
+#endif
+#if TEST383
+    string ransomNote = "aa", magazine = "aab";
+    bool result = canConstruct(ransomNote, magazine);
+    cout << "result:" << result << endl;
+#endif
+#if TEST242
+    string s = "anagram", t = "nagaram";
+    bool result = isAnagram(s, t);
+    cout << "result:" << result << endl;
+#endif
 
 }
 
